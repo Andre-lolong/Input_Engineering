@@ -1,8 +1,8 @@
 # ask the user for number 1-1000
 while True:
     try:
-        num = int(input("Enter a number from 1 to 1000: "))
-        if 1 <= num <= 1000:
+        num = input("Enter a number from 1 to 1000: ")
+        if 1 <= int(num) <= 1000:
             num = num
             print(num)
             break
@@ -11,4 +11,6 @@ while True:
     except ValueError:
         print("Enter a valid input.")
 # check the digit
+digit = len(num)
+print(digit)
 # add zeros to the beginning to match the six digit requirement for the input
