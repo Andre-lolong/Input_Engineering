@@ -2,7 +2,7 @@
 fullname = input("Enter your fullname in incorrect casing: ")
 
 # convert to snake case
-FULLNAME = fullname.title()
+FULLNAME = fullname.lower()
 word = FULLNAME.split()
 snake_cased_name = '_'.join(word)
 
