@@ -1,12 +1,12 @@
-# ask the user for number 1-1000
+# ask the user for number 0 to 1000
 while True:
     try:
-        num = input("Enter a number from 1 to 1000: ")
-        if 1 <= int(num) <= 1000:
+        num = input("Enter a number from 0 to 1000: ")
+        if 0 <= int(num) <= 1000:
             num = num
             break
         else:
-            print("The number you entered is not between 1 to 1000. Try again.\n")
+            print("The number you entered is not between 0 to 1000. Try again.\n")
     except ValueError:
         print("Enter a valid input.\n")
 
