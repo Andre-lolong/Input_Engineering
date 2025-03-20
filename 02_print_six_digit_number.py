@@ -9,8 +9,10 @@ while True:
             print("The number you entered is not between 1 to 1000. Try again.\n")
     except ValueError:
         print("Enter a valid input.\n")
+
 # check the digit
 digit = len(num)
+
 # add zeros to the beginning to match the six digit requirement for the input
 for i in range(digit, 6):
     if digit == i:
